@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card shadow">
+  <div class="card-header bg-warning">Edit Student</div>
+  <div class="card-body">
+    <form method="POST">
+      <input name="name" class="form-control mb-2" value="{{ student[1] }}">
+      <input name="age" class="form-control mb-2" value="{{ student[2] }}">
+      <input name="course" class="form-control mb-2" value="{{ student[3] }}">
+      <input name="email" class="form-control mb-2" value="{{ student[4] }}">
+      <input name="phone" class="form-control mb-2" value="{{ student[5] }}">
+      <input name="gender" class="form-control mb-2" value="{{ student[6] }}">
+      <input name="date_of_birth" class="form-control mb-2" value="{{ student[7] }}">
+      <input name="department" class="form-control mb-2" value="{{ student[8] }}">
+      <input name="year_of_study" class="form-control mb-2" value="{{ student[9] }}">
+      <input name="city" class="form-control mb-2" value="{{ student[10] }}">
+      <input name="gpa" class="form-control mb-2" value="{{ student[11] }}">
+      
+      <button class="btn btn-warning">Update</button>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
+
+<button>Update</button>
+</form>

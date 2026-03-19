@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <h5>Total Students</h5>
+        <h2>{{ total_students }}</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <a href="/students" class="btn btn-primary w-100">Manage Students</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="card shadow">
+      <div class="card-body text-center">
+        <a href="/add" class="btn btn-success w-100">Add Student</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
